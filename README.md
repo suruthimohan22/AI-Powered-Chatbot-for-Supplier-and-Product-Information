@@ -26,7 +26,6 @@ This project is an AI-powered chatbot that allows users to query a product and s
 
 •	Transformers: A library from Hugging Face for state-of-the-art Natural Language Processing.
 
-
 **Database**
 
 •	PostgreSQL: A powerful, open-source object-relational database system.
