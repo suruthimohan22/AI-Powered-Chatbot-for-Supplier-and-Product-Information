@@ -1,36 +1,52 @@
 # AI-Powered-Chatbot-for-Supplier-and-Product-Information
-Overview
+
+**Overview**
+
 This project is an AI-powered chatbot that allows users to query a product and supplier database using natural language. The chatbot interacts with an open-source LLM (Large Language Model) and utilizes the LangGraph framework for agent workflows to fetch relevant information from a MySQL/PostgreSQL database and summarize the data using the LLM.
 
-Tech Stack
+**Tech Stack**
 
-Frontend
+
+**Frontend**
 
 •	React: A JavaScript library for building user interfaces.
+
 •	Tailwind CSS: A utility-first CSS framework for styling.
+
 •	Axios: A promise-based HTTP client for making API requests.
 
-Backend
+
+**Backend**
 
 •	FastAPI: A modern, fast (high-performance), web framework for building APIs with Python 3.6+.
+
 •	SQLAlchemy: The Python SQL toolkit and Object-Relational Mapping (ORM) library.
+
 •	LangGraph: A framework for building agent workflows.
+
 •	Transformers: A library from Hugging Face for state-of-the-art Natural Language Processing.
 
-Database
+
+**Database**
 
 •	PostgreSQL: A powerful, open-source object-relational database system.
-Features
+
+
+**Features**
+
 •	Natural Language Querying: Users can input queries like "Show me all products under brand X" or "Which suppliers provide laptops?".
+
 •	Data Retrieval: The chatbot fetches relevant data from the database.
+
 •	Data Summarization: Supplier data is summarized using an open-source LLM.
+
 •	Graceful Error Handling: The system handles missing or incorrect queries gracefully.
 
 
 
 
- 
-Directory Structure
+ **Directory Structure**
+
 
 ai-powered-chatbot
 ├── backend
