@@ -42,6 +42,14 @@ This project is an AI-powered chatbot that allows users to query a product and s
 
 •	Graceful Error Handling: The system handles missing or incorrect queries gracefully.
 
+**Usage**
+
+Interact with the chatbot by entering queries like: "Show me all products under brand X." "Which suppliers provide laptops
+
+CREATE TABLE Products ( id SERIAL PRIMARY KEY, name VARCHAR(100), brand VARCHAR(50), price DECIMAL(10, 2), category VARCHAR(50), description TEXT, supplier_id INT );
+
+CREATE TABLE Suppliers ( id SERIAL PRIMARY KEY, name VARCHAR(100), contact_info TEXT, product_categories TEXT ); 
+
 
 
 
@@ -49,36 +57,68 @@ This project is an AI-powered chatbot that allows users to query a product and s
 
 
 ai-powered-chatbot
+
 ├── backend
+
 │   ├── app.py
+
 │   ├── langgraph_workflow.py
+
 │   ├── models
+
 │   │   ├── __init__.py
+
 │   │   ├── product.py
+
 │   │   └── supplier.py
+
 │   ├── services
+
 │   │   ├── database_service.py
+
 │   │   └── llm_service.py
+
 │   ├── requirements.txt
+
 │   └── README.md
+
 ├── frontend
+
 │   ├── public
+
 │   │   └── index.html
+
 │   ├── src
+
 │   │   ├── components
+
 │   │   │   ├── Chatbot.jsx
+
 │   │   │   ├── ChatInput.jsx
+
 │   │   │   ├── QueryHistory.jsx
+
 │   │   │   └── ProductComparison.jsx
+
 │   │   ├── services
+
 │   │   │   └── api.js
+
 │   │   ├── redux
+
 │   │   │   ├── actions.js
+
 │   │   │   ├── reducers.js
+
 │   │   │   └── store.js
+
 │   │   ├── App.js
+
 │   │   ├── index.js
+
 │   │   └── styles.css
+
 │   ├── package.json
+
 │   └── README.md
 
